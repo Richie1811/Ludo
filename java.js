@@ -32,7 +32,7 @@ roll.addEventListener('click', function () {
     if (play1 === 1) {
       dice1 = Math.trunc(Math.random() * 6) + 1;
       console.log('1');
-      diceEl.src = `image/dice-${dice1}.png`;
+      diceEl.src = `dice-${dice1}.png`;
       blue += dice1;
       if (blue === 29) {
         document.querySelector('.player').textContent =
@@ -56,7 +56,7 @@ roll.addEventListener('click', function () {
     } else {
       dice1 = Math.trunc(Math.random() * 6) + 1;
       console.log('1');
-      diceEl.src = `image/dice-${dice1}.png`;
+      diceEl.src = `dice-${dice1}.png`;
       if (dice1 === 6) {
         play1 = 1;
       } else {
@@ -68,7 +68,7 @@ roll.addEventListener('click', function () {
     if (play2 === 1) {
       dice2 = Math.trunc(Math.random() * 6) + 1;
       console.log('2');
-      diceEl.src = `image/dice-${dice2}.png`;
+      diceEl.src = `dice-${dice2}.png`;
       red += dice2;
       if (red === 29) {
         document.querySelector('.player').textContent =
@@ -92,7 +92,7 @@ roll.addEventListener('click', function () {
     } else {
       dice2 = Math.trunc(Math.random() * 6) + 1;
       console.log('1');
-      diceEl.src = `image/dice-${dice2}.png`;
+      diceEl.src = `dice-${dice2}.png`;
       if (dice2 === 6) {
         play2 = 1;
       } else {
